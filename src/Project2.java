@@ -1,4 +1,3 @@
-package proj2;
 import cardgames.*;
 
 // Must add Javadoc here. See lab 1 for reference.
@@ -7,7 +6,7 @@ public class Project2
 {
 	public static void main(String[] args)
 	{
-		GUI theWindow = new GUI();
+		Display theCards = new Display();
 		
 		Deck theDeck = new Deck();
 		theDeck.shuffleDeck();
@@ -15,8 +14,8 @@ public class Project2
 		Card card1 = theDeck.dealCard();
 		Card card2 = theDeck.dealCard();
 		
-		theWindow.showCard(card1);
-		theWindow.showCard(card2);
+		theCards.showCard(card1);
+		theCards.showCard(card2);
 		
 		System.out.println("Card 1 is: " + card1.toString());
 		System.out.println("Card 2 is: " + card2.toString());
